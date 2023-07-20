@@ -303,6 +303,7 @@ html {
 .place-buy-btn:hover {
     color: #000;
     background-color: #ccc;
+    cursor: pointer;
 }
 
 
@@ -322,6 +323,12 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    display: none;
+    z-index: 1;
+} 
+
+.modal.open {
+    display: flex;
 }
 
 .modal-container {
@@ -330,6 +337,7 @@ html {
     max-width: calc(100% - 32px);
     background-color: #fff;
     position: relative;
+    animation: modalFadeIn ease 0.5s;
 }
 
 .modal-close {
@@ -392,8 +400,8 @@ html {
 }
 
 #buy-tickets:hover {
-    cursor: pointer;
     opacity: 0.9;
+    cursor: pointer;
 }
 
 .modal-footer {
@@ -405,4 +413,17 @@ html {
 .modal-footer a {
     color: #2196F3;
 }
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-300px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
