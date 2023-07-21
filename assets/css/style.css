@@ -21,6 +21,8 @@ html {
 4. Kiểu dáng ( kiểu chữ, tròn, vuông,...)
 */
 
+/* Common */
+
 .clear {
     clear: both;
 }
@@ -28,6 +30,32 @@ html {
 .text-white {
     color: #fff !important;
 }
+
+.text-center {
+    text-align: center !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+/* Cột ( Colum */
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: calc(100%/3);
+}
+
+/* main */
 
 #main {
 
@@ -187,15 +215,6 @@ html {
     margin-top: 48px;
 }
 
-#content .member-item {
-    float: left;
-    /* CÁCH 1 */
-    width: calc(100%/3);
-    /* CÁCH 2 */
-    /* width: 33.33333%; */
-    text-align: center;
-}
-
 #content .member-name {
     font-size: 15px;
 }
@@ -251,15 +270,8 @@ html {
     margin-left: -8px;
     margin-right: -8px; */
     /* Viết gộp lại */
-    margin: 32px -8px 0;
-    padding-bottom: 48px;
-}
-
-
-.place-item {
-    float: left;
-    width: calc(100%/3) ;
-    padding: 0 8px;
+    margin-top: 32px;
+    margin-bottom: 48px;
 }
 
 .place-img {
