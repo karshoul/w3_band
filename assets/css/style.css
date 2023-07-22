@@ -6,6 +6,7 @@
 }
 
 html {
+    scroll-behavior: smooth;
     font-family: Helvetica, arial, sans-serif;
 }
 /* 
@@ -33,6 +34,25 @@ html {
 
 .text-center {
     text-align: center !important;
+}
+
+.full-right {
+    float: right !important;
+}
+
+.btn {
+    padding: 8px 16px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #000;
+    display: inline-block;
+    border: none;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
 }
 
 .mt-8 {
@@ -202,7 +222,7 @@ html {
 
 #content .content-section {
     width: 800px;
-    padding: 64px 0;
+    padding: 64px 0 112px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -289,7 +309,6 @@ html {
     margin-right: -8px; */
     /* Viết gộp lại */
     margin-top: 32px;
-    margin-bottom: 48px;
 }
 
 .place-img {
@@ -322,21 +341,6 @@ html {
     line-height: 1.5;
 }
 
-.place-buy-btn {
-    padding: 8px 16px;
-    color: #fff;
-    text-decoration: none;
-    background-color: #000;
-    display: inline-block;
-    border: none;
-}
-
-.place-buy-btn:hover {
-    color: #000;
-    background-color: #ccc;
-    cursor: pointer;
-}
-
 /* contac from */
 
 .contact-content {
@@ -363,25 +367,39 @@ html {
     border: 1px solid #ccc;
 }
 
-.contact-form .form-submit-btn {
-    background-color: #000;
-    color: #fff;
-    border: 1px solid #000;
-    padding: 10px 16px;
-    float: right;
-    font-size: 15px;
-}
+/* Map section */
 
-.form-submit-btn:hover {
-    color: #000!important;
-    background-color: #ccc;
-    border: none;
-    cursor: pointer;
+.map-section img{
+    width: 100%;
 }
 
 /* Footer section */
 #footer {
+    padding: 64px 16px;
+    text-align: center;
+}
 
+#footer .social-list {
+    font-size: 24px;
+}
+
+#footer .social-list a {
+    color: rgba(0, 0, 5, 0.6);
+    text-decoration: none;
+}
+
+#footer .copy-right a:hover,
+#footer .social-list a:hover {
+    color: rgba(0, 0, 5, 0.4);
+}
+
+#footer .copy-right {
+    color: rgba(0, 0, 5, 0.6);
+    margin-top: 15px;
+}
+
+#footer .copy-right a {
+    color: rgba(0, 0, 5, 0.6);
 }
 
 .modal {
