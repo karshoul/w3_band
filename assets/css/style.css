@@ -24,9 +24,10 @@ html {
 
 /* Common */
 
-.clear {
+/* Khi không tìm ra được bug thì dùng này */
+/* .clear {
     clear: both;
-}
+} */
 
 .text-white {
     color: #fff !important;
@@ -107,6 +108,7 @@ html {
     height: 46px;
     background-color: black;
     z-index: 1;
+    overflow: hidden;
 }
 
 #nav {
@@ -167,6 +169,7 @@ html {
     font-size: 14px;
 }
 
+#header .mobile-menu-btn,
 #header .search-btn {
     float: right;
     padding: 0 21px;
@@ -174,9 +177,18 @@ html {
 
 #header .search-btn:hover {
     cursor: pointer;
-    background-color: #f44336!important;
+    background-color: #f44336;
 }
 
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon {
+    color: #000;
+}
+
+#header .menu-icon,
 #header .search-icon {
     color: #fff;
     font-size: 15px;
