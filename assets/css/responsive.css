@@ -10,6 +10,10 @@
 
 /* Mobile */
 @media (max-width: 740px) {
+    .s-col-full {
+        width: 100%;
+    }
+
     #header {
         overflow: hidden;
         }
@@ -29,7 +33,7 @@
     #nav li a {
         padding: 1px 24px;
     }
-    
+
     #nav > li {
         background-color: #000;
         display: block;
@@ -49,5 +53,8 @@
         padding: 5px 41px;
     }
 
+    #content .member-img {
+        width: 60%;
+    }
 
 }

@@ -271,7 +271,7 @@ html {
 }
 
 #content .member-list {
-    margin-top: 48px;
+    margin-top: 32px;
 }
 
 #content .member-name {
@@ -329,7 +329,7 @@ html {
     margin-left: -8px;
     margin-right: -8px; */
     /* Viết gộp lại */
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 .place-img {
