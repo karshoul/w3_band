@@ -108,7 +108,6 @@ html {
     height: 46px;
     background-color: black;
     z-index: 1;
-    overflow: hidden;
 }
 
 #nav {
